@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+:root {
+  font-family: "Titillium Web";
+  font-size: medium;
+
+  --color-white: #f1eff4;
+  --color-purple: #e3d9f8;
+  --color-black: #29225c;
+  --color-red: #f87575;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  background-size: 100vw 100vh;
+  color: var(--color-black);
+}
