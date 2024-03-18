@@ -1,35 +1,25 @@
 <script lang="ts">
+  import { navs } from "$lib/index";
+  import { Hamburger } from "svelte-hamburgers";
   import { isMenuOpen } from "$lib";
 
   import logoimg from "$lib/assets/logo-background.png";
   import burger from "$lib/assets/burgher.svg";
-
-  const navs = [
-    {
-      name: "HOME",
-      link: "/",
-    },
-    {
-      name: "ABOUT",
-      link: "/about",
-    },
-    {
-      name: "EVENTS",
-      link: "/events",
-    },
-    {
-      name: "CONTACTS",
-      link: "/contacts",
-    },
-  ];
+  import Menu from "./Menu.svelte";
 </script>
 
 <header>
+  <div class="burger">
+    <Hamburger bind:open={$isMenuOpen} --color="var(--color-black)" />
+  </div>
   <div class="logo">
-    <img class="menu" src={burger} alt="menu" />
+    <!-- <img class="menu" src={burger} alt="menu" /> -->
     <img src={logoimg} alt="logo S.P.R.I.Te." />
     <h1>S.P.R.I.Te.</h1>
   </div>
+  {#if $isMenuOpen}
+    <Menu />
+  {/if}
   <nav class="navbar">
     <ul>
       {#each navs as nav}
@@ -69,7 +59,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
   }
 
   .logo > img {
@@ -90,13 +80,18 @@
     font-weight: bold;
   }
 
+  .burger {
+    margin: 1rem;
+  }
+
   @media only screen and (min-width: 600px) {
     header {
       display: flex;
       justify-content: space-between;
     }
 
-    .menu {
+    .menu,
+    .burger {
       display: none;
     }
 
@@ -142,13 +137,25 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .burger {
+      display: inline-block;
+    }
+
     .navbar {
       display: none;
     }
 
-    .menu {
-      display: block;
-      margin: 1rem;
+    .logo {
+      margin-right: 3rem;
+      float: right;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
   }
 </style>

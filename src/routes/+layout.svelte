@@ -1,19 +1,16 @@
 <script>
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import { isMenuOpen } from "$lib";
 
   import "./style.css";
 </script>
 
 <div class="app">
   <Header />
-  {#if !$isMenuOpen}
-    <main>
-      <slot />
-    </main>
-    <Footer />
-  {/if}
+  <main>
+    <slot />
+  </main>
+  <Footer />
 </div>
 
 <style>
@@ -23,6 +20,7 @@
     min-height: 100vh;
     width: 100%;
     background-color: var(--color-white);
+    overflow-x: hidden;
   }
 
   main {
