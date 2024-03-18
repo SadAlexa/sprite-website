@@ -121,6 +121,8 @@
     position: absolute;
     border-radius: 50%;
     box-shadow: var(--color-purple) 0px 5px 15px;
+    width: 50rem;
+    height: 50rem;
   }
 
   a {
@@ -132,8 +134,6 @@
   @media (min-width: 600px) {
     .circle {
       margin-top: -33rem;
-      width: 50rem;
-      height: 50rem;
     }
 
     .find > h1 {
@@ -144,8 +144,6 @@
   @media (max-width: 600px) {
     .circle {
       margin-top: -28rem;
-      width: 50rem;
-      height: 50rem;
     }
 
     .find > h1 {

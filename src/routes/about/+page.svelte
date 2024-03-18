@@ -41,13 +41,13 @@
 
   h1 {
     font-size: 36px;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-bold);
     color: var(--color-red);
   }
 
   p {
     font-size: 20px;
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-regular);
     margin: 1rem 0;
     padding: 0;
   }
