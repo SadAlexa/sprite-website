@@ -56,14 +56,14 @@
   }
 
   h1 {
-    font-weight: bolder;
+    font-weight: var(--font-bold);
     font-size: 26px;
     color: var(--color-white);
   }
 
   a > h1 {
     font-size: medium;
-    font-weight: bold;
+    font-weight: var(--font-medium);
     text-decoration: none;
   }
 

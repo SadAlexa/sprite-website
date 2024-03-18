@@ -80,13 +80,13 @@
 
   h1 {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: var(--font-bold);
     color: var(--color-red);
   }
 
   p {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: var(--font-regular);
   }
 
   .socials > li {

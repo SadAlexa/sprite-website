@@ -47,7 +47,7 @@
   select {
     text-decoration: none;
     color: var(--color-black);
-    font-weight: bold;
+    font-weight: var(--font-bold);
   }
 
   ul {

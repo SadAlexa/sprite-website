@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
 
 :root {
   font-family: "Titillium Web";
@@ -8,6 +8,11 @@
   --color-purple: #e3d9f8;
   --color-black: #29225c;
   --color-red: #f87575;
+
+  --font-bold: 700;
+  --font-medium: 600;
+  --font-regular: 400;
+  --font-light: 300;
 }
 
 body {

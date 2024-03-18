@@ -41,13 +41,13 @@
 
   h1 {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: var(--font-weight-bold);
     color: var(--color-red);
   }
 
   p {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     margin: 1rem 0;
     padding: 0;
   }
@@ -89,7 +89,7 @@
   }
 
   .cardtext > h2 {
-    font-weight: bolder;
+    font-weight: var(--font-bold);
     color: var(--color-red);
     display: flex;
     justify-content: start;
@@ -97,7 +97,7 @@
   }
 
   .cardtext > p {
-    font-weight: normal;
+    font-weight: var(--font-regular);
     margin: 0;
   }
 
