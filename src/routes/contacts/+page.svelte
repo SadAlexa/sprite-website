@@ -93,8 +93,8 @@
     background-color: var(--color-black);
     margin: 1rem;
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -22,10 +22,7 @@
     <img src={logoimg} alt="" />
     <span class="cardtext">
       <h2>TITOLO</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </span>
   </div>
   <!-- generare le card in codice -->
@@ -63,12 +60,15 @@
   .about {
     text-align: center;
     max-width: 35rem;
+    z-index: 3;
   }
 
   .circle {
     position: absolute;
     border-radius: 50%;
     box-shadow: var(--color-purple) 0px 5px 15px;
+    background-color: var(--color-white);
+    z-index: 2;
   }
 
   .card {
@@ -79,6 +79,7 @@
     border-radius: 10rem;
     box-shadow: var(--color-purple) 0px 5px 15px;
     margin-top: 4rem;
+    background-color: var(--color-white);
   }
 
   .cardtext {
@@ -114,12 +115,13 @@
     }
 
     .card {
-      width: 40rem;
+      width: 35rem;
       height: 10rem;
     }
 
     .cardtext > h2 {
       font-size: 26px;
+      margin-bottom: 1rem;
     }
 
     .card > img {
@@ -140,11 +142,12 @@
 
     .card {
       width: 26rem;
-      height: 15rem;
+      height: 12rem;
     }
 
     .cardtext > h2 {
       font-size: 24px;
+      margin-bottom: 1rem;
     }
 
     .cardtext > p {
