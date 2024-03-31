@@ -1,23 +1,34 @@
 import { writable } from "svelte/store";
 
-const navs = [
+let navs = [
   {
-    name: "HOME",
+    name: "nav.home",
     link: "/",
   },
   {
-    name: "ABOUT",
+    name: "nav.about",
     link: "/about",
   },
   {
-    name: "EVENTS",
+    name: "nav.events",
     link: "/events",
   },
   {
-    name: "CONTACTS",
+    name: "nav.contacts",
     link: "/contacts",
   },
 ];
 
 export { navs };
 export const isMenuOpen = writable(false);
+
+/* export function t(key: any) {
+  console.log(it[key as keyof typeof it]);
+  switch (lang as any) {
+    case "IT":
+      return it[key as keyof typeof it];
+    case "EN":
+      return en[key as keyof typeof en];
+  }
+}
+ */

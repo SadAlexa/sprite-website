@@ -2,10 +2,12 @@
   import { navs } from "$lib/index";
   import { Hamburger } from "svelte-hamburgers";
   import { isMenuOpen } from "$lib";
+  import { _ } from "svelte-i18n";
 
   import logoimg from "$lib/assets/logo-background.png";
   import burger from "$lib/assets/burgher.svg";
   import Menu from "./Menu.svelte";
+  import Lang from "./Lang.svelte";
 </script>
 
 <header>
@@ -25,18 +27,12 @@
       {#each navs as nav}
         <li>
           <a href={nav.link}>
-            {nav.name}
+            {$_(nav.name)}
           </a>
         </li>
       {/each}
     </ul>
-    <div class="lang">
-      <label for="lang">LANGUAGE</label>
-      <select id="lang" name="lang">
-        <option value="it">IT</option>
-        <option value="en">EN</option>
-      </select>
-    </div>
+    <Lang />
   </nav>
 </header>
 
@@ -114,26 +110,6 @@
     .navbar > ul > li {
       padding: 1rem;
     }
-
-    .navbar > .lang {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: end;
-      align-items: center;
-      margin-right: 1rem;
-    }
-
-    .navbar > .lang > label {
-      display: none;
-    }
-
-    .navbar > .lang > select {
-      border: none;
-      background-color: var(--color-white);
-      color: var(--color-black);
-      font-size: 26px;
-    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -148,14 +124,6 @@
     .logo {
       margin-right: 3rem;
       float: right;
-    }
-
-    .row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
     }
   }
 </style>

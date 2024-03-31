@@ -1,7 +1,19 @@
 <script lang="ts">
-  import logoimg from "$lib/assets/logo-background.png";
+  import { _ } from "svelte-i18n";
 
   import "../style.css";
+
+  const cards = [
+    "social",
+    "photo",
+    "graphics",
+    "writer",
+    "events",
+    "volunteer",
+    "web",
+    "study",
+    "notes",
+  ];
 </script>
 
 <div class="body">
@@ -18,14 +30,15 @@
     </span>
   </div>
   <br />
-  <div class="card">
-    <img src={logoimg} alt="" />
-    <span class="cardtext">
-      <h2>TITOLO</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </span>
-  </div>
-  <!-- generare le card in codice -->
+  {#each cards as card}
+    <div class="card">
+      <img src="src/lib/assets/about/{card}.jpg" alt="" />
+      <span class="cardtext">
+        <h2>{$_(`about.${card}.title`)}</h2>
+        <p>{$_(`about.${card}.text`)}</p>
+      </span>
+    </div>
+  {/each}
 </div>
 
 <style>
@@ -34,6 +47,14 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .card > img {
+    border-radius: 10rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
   }
 
   h1 {
@@ -123,10 +144,6 @@
       font-size: 26px;
       margin-bottom: 1rem;
     }
-
-    .card > img {
-      width: 10rem;
-    }
   }
 
   @media (max-width: 600px) {
@@ -152,10 +169,6 @@
 
     .cardtext > p {
       font-size: 18px;
-    }
-
-    .card > img {
-      width: 12rem;
     }
   }
 </style>

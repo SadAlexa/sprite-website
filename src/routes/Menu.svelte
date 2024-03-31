@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { _ } from "svelte-i18n";
   import { navs } from "$lib/index";
   import { isMenuOpen } from "$lib";
+  import Lang from "./Lang.svelte";
 </script>
 
 <nav class="navbar-menu">
@@ -12,19 +14,12 @@
           href={nav.link}
           on:click={() => ($isMenuOpen = false)}
         >
-          {nav.name}
+          {$_(nav.name)}
         </a>
       </li>
     {/each}
     <li>
-      <div class="lang">
-        <!-- da cambiare -->
-        <label for="lang">LANGUAGE</label>
-        <select id="lang" name="lang">
-          <option value="it">IT</option>
-          <option value="en">EN</option>
-        </select>
-      </div>
+      <Lang />
     </li>
   </ul>
 </nav>
@@ -42,9 +37,7 @@
     height: 100vh;
   }
 
-  a,
-  label,
-  select {
+  a {
     text-decoration: none;
     color: var(--color-black);
     font-weight: var(--font-bold);
