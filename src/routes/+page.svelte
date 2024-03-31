@@ -13,7 +13,14 @@
       consectetur adipisicing elit.
     </p>
     <label for="about">About</label>
-    <input type="button" value="About" id="about" />
+    <input
+      type="button"
+      value="About"
+      id="about"
+      on:click={() => {
+        window.location.href = "/about";
+      }}
+    />
   </span>
   <div class="img">
     <img src={logoimg} alt="logo S.P.R.I.Te." />

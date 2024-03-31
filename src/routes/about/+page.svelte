@@ -30,15 +30,17 @@
     </span>
   </div>
   <br />
-  {#each cards as card}
-    <div class="card">
-      <img src="src/lib/assets/about/{card}.jpg" alt="" />
-      <span class="cardtext">
-        <h2>{$_(`about.${card}.title`)}</h2>
-        <p>{$_(`about.${card}.text`)}</p>
-      </span>
-    </div>
-  {/each}
+  <div class="cards">
+    {#each cards as card}
+      <div class="card" id="cardid">
+        <img src="src/lib/assets/about/{card}.jpg" alt="" />
+        <span class="cardtext">
+          <h2>{$_(`about.${card}.title`)}</h2>
+          <p>{$_(`about.${card}.text`)}</p>
+        </span>
+      </div>
+    {/each}
+  </div>
 </div>
 
 <style>
@@ -55,6 +57,20 @@
     height: 10rem;
     object-fit: cover;
     aspect-ratio: 1 / 1;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards .card:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .cards .card:last-child {
+    margin-bottom: 3rem;
   }
 
   h1 {
@@ -113,8 +129,6 @@
   .cardtext > h2 {
     font-weight: var(--font-bold);
     color: var(--color-red);
-    display: flex;
-    justify-content: start;
     margin: 0;
   }
 
