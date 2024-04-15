@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { _ } from "svelte-i18n";
   import logoimg from "$lib/assets/logo-background.png";
 
   import telegram from "$lib/assets/telegram.svg";
@@ -14,16 +15,16 @@
   </div>
   <br />
   <span class="find">
-    <h1>YOU CAN FIND US HERE!!</h1>
+    <h1>{$_("contacts.title")}:</h1>
     <p>
-      Nella tua sede universitaria preferita in:<br />
+      {$_("contacts.text")}<br />
       <span><strong>Via dell'Università 50 - Cesena</strong></span><br />
-      Nell'aula <span><strong>2010</strong></span>!
+      {$_("contacts.room")} <span><strong>2010</strong></span>!
     </p>
   </span>
   <br />
   <div class="chat">
-    <h1>CHAT WITH US:</h1>
+    <h1>{$_("contacts.chat")}:</h1>
     <ul class="socials">
       <li>
         <a href="https://t.me/spritenews"

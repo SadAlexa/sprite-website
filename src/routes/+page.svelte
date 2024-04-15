@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { _ } from "svelte-i18n";
+
   import logoimg from "$lib/assets/logo-background.png";
 
   import "./style.css";
@@ -6,11 +8,10 @@
 
 <div class="body">
   <span>
-    <h1>HI THERE!</h1>
-    <h2>WE ARE <span>S.P.R.I.Te.</span></h2>
+    <h1>{$_("home.title")}</h1>
+    <h2>{$_("home.subtitle")} <span>S.P.R.I.Te.</span></h2>
     <p>
-      We are a non-profit association that do lorem ipsum dolor sit amet
-      consectetur adipisicing elit.
+      {$_("home.text")}
     </p>
     <label for="about">About</label>
     <input

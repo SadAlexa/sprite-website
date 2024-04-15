@@ -1,4 +1,7 @@
 {
+  "about.title": "CHI SIAMO?",
+  "about.text": "S.P.R.I.Te. significa “Studenti Polo Romagnolo in Informatica e Tecnologie”. L'associazione nasce negli anni '90 per soddisfare l'esigenza di un gruppo di studenti di volere ampliare l'offerta di servizi per gli studenti universitari del Polo di Cesena. A più di venti anni dalla sua nascita l'Associazione S.P.R.I.Te. vanta una lunghissima serie di attività organizzate ed una partecipazione sempre più ampia da parte degli studenti di Corsi di Laurea e Facoltà della città di Cesena. Puoi unirti anche tu se vuoi!",
+  "about.youll": "Potresti fare cose come:",
   "about.social.title": "Social media manager 📱",
   "about.social.text": "Sperimenta nuovi metodi per pubblicizzare gli eventi",
   "about.photo.title": "Fotografo 📸",
@@ -22,5 +25,18 @@
   "nav.about": "CHI SIAMO",
   "nav.contacts": "CONTATTI",
   "nav.events": "EVENTI",
-  "nav.lang": "LINGUA"
+  "nav.lang": "LINGUA",
+
+  "contacts.title": "PUOI TROVARCI QUI",
+  "contacts.text": "Nella tua sede universitaria preferita in:",
+  "contacts.room": "Nell'aula",
+  "contacts.chat": "PARLA CON NOI",
+
+  "footer.about": "Chi siamo?",
+  "footer.events": "Qual è il prossimo evento?",
+  "footer.contacts": "Vuoi contattarci?",
+
+  "home.title": "CIAO!",
+  "home.subtitle": "NOI SIAMO",
+  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, organizziamo tanti eventi e rendiamo un po' più bella la vita universitaria."
 }

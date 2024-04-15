@@ -1,4 +1,6 @@
 <script>
+  import { _ } from "svelte-i18n";
+
   import telegram from "$lib/assets/telegram.svg";
   import email from "$lib/assets/email.svg";
   import insta from "$lib/assets/insta.svg";
@@ -10,10 +12,10 @@
   <div>
     <h1 class="logo">S.P.R.I.Te.</h1>
     <ul class="questions">
-      <li><a href="/"><h1>Who we are?</h1></a></li>
-      <li><a href="/events"><h1>what are the next events?</h1></a></li>
+      <li><a href="/"><h1>{$_("footer.about")}</h1></a></li>
+      <li><a href="/events"><h1>{$_("footer.events")}</h1></a></li>
       <li>
-        <a href="/contacts"><h1>Do you want to contact us?</h1></a>
+        <a href="/contacts"><h1>{$_("footer.contacts")}</h1></a>
         <ul class="socials">
           <li>
             <a href="https://t.me/spritenews"

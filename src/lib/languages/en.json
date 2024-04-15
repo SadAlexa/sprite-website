@@ -1,4 +1,7 @@
 {
+  "about.title": "WHO ARE WE?",
+  "about.text": "S.P.R.I.Te. stands for “Studenti Polo Romagnolo in Informatica e Tecnologie” (Romagnolo Pole Students in Computer Science and Technologies). The association was founded in the '90s to meet the needs of a group of students who wanted to expand the range of services for university students at the Cesena Campus. More than twenty years after its inception, the S.P.R.I.Te. Association boasts a long list of organized activities and an increasingly broad participation from students of Degree Courses and Faculties in the city of Cesena. You can join too if you want!",
+  "about.youll": "You will do things like:",
   "about.social.title": "Social Media Manager 📱",
   "about.social.text": "Experiment with new methods to promote events",
   "about.photo.title": "Photographer 📸",
@@ -22,5 +25,18 @@
   "nav.about": "ABOUT",
   "nav.contacts": "CONTACTS",
   "nav.events": "EVENTS",
-  "nav.lang": "LANGUAGE"
+  "nav.lang": "LANGUAGE",
+
+  "contacts.title": "YOU CAN FIND US HERE",
+  "contacts.text": "In your favorite university campus in:",
+  "contacts.room": "In the room",
+  "contacts.chat": "CHAT WITH US",
+
+  "footer.about": "Who are we?",
+  "footer.events": "What's the next event?",
+  "footer.contacts": "Do you want to contact us?",
+
+  "home.title": "HI THERE!",
+  "home.subtitle": "WE ARE",
+  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, we organize many events and make it more beautiful the university life."
 }

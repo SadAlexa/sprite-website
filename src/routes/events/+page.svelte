@@ -1,18 +1,6 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
-  import Calendar from "./Calendar.svelte";
   import logoimg from "$lib/assets/logo-background.png";
   import "../style.css";
-
-  let today = new Date();
-
-  onMount(() => {
-    const container = document.getElementById("container");
-    container?.addEventListener("scroll", () => {
-      console.log("Scroll event detected!");
-    });
-  });
 </script>
 
 <div class="body">
@@ -21,55 +9,16 @@
   </div>
   <br />
   <div class="events">
-    <div class="calendar">
-      <Calendar {today} year={today.getFullYear()} month={today.getMonth()} />
-    </div>
-    <div class="container" id="container">
-      <div class="card">
-        <img src={logoimg} alt="" />
-        <span class="cardtext">
-          <h2>TITOLO</h2>
-          <h3>18-06-2024 · 16:30</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </span>
-      </div>
-      <!-- da cancellare -->
-      <div class="card">
-        <img src={logoimg} alt="" />
-        <span class="cardtext">
-          <h2>TITOLO</h2>
-          <h3>18-06-2024 · 16:30</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </span>
-      </div>
-      <div class="card">
-        <img src={logoimg} alt="" />
-        <span class="cardtext">
-          <h2>TITOLO</h2>
-          <h3>18-06-2024 · 16:30</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </span>
-      </div>
-      <div class="card">
-        <img src={logoimg} alt="" />
-        <span class="cardtext">
-          <h2>TITOLO</h2>
-          <h3>18-06-2024 · 16:30</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </span>
-      </div>
+    <div class="card">
+      <img src={logoimg} alt="" />
+      <span class="cardtext">
+        <h2>TITOLO</h2>
+        <h3>18-06-2024 · 16:30</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+      </span>
     </div>
   </div>
 </div>
@@ -100,11 +49,11 @@
 
   .card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 10rem;
     background-color: var(--color-white);
+    box-shadow: var(--color-purple) 0px 5px 15px;
     margin: 0 2rem 2rem 2rem;
   }
 
@@ -137,44 +86,47 @@
   .events {
     display: flex;
     align-items: center;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-purple);
+    margin: 20rem 0 3rem 0;
     flex-direction: column;
   }
 
   .card > img {
-    width: 10rem;
+    width: 20rem;
   }
 
   @media (min-width: 600px) {
+    .card {
+      flex-direction: row;
+    }
+
+    .events .card:nth-child(odd) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
     .circle {
       margin-top: -33rem;
     }
 
-    .events {
-      margin: 18rem 0 3rem 0;
-      flex-direction: row;
-    }
-
-    .container {
-      overflow: auto;
-      border-radius: 0 5rem 5rem 0;
-      margin: 2rem 0 0 1rem;
-      max-height: 27rem;
-    }
-
     .card {
-      width: 30rem;
-      height: 10rem;
+      width: 40rem;
+      height: 20rem;
+      margin-top: 2rem;
     }
   }
 
   @media (max-width: 600px) {
+    .card > img {
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      flex-direction: column;
+      justify-content: start;
+      text-align: center;
+      width: 20rem;
+      height: 40rem;
+    }
     .circle {
       margin-top: -28rem;
     }
@@ -182,18 +134,6 @@
     .events {
       margin: 22rem 3rem 0 3rem;
       flex-direction: column;
-    }
-
-    .container {
-      border-radius: 0 0 5rem 5rem;
-      margin-top: 1rem;
-      width: 25rem;
-      height: auto;
-    }
-
-    .card {
-      width: 22rem;
-      height: 15rem;
     }
 
     .card:first-child {

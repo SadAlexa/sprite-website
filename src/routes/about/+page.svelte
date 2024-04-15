@@ -20,13 +20,11 @@
   <div class="roundcard">
     <div class="circle" />
     <span class="about">
-      <h1>WHO ARE WE?</h1>
+      <h1>{$_("about.title")}</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
-        sit amet, consectetur.
+        {$_("about.text")}
       </p>
-      <p class="strong"><strong>You will do things like:</strong></p>
+      <p class="strong"><strong>{$_("about.youll")}</strong></p>
     </span>
   </div>
   <br />
@@ -139,7 +137,7 @@
 
   @media (min-width: 600px) {
     .circle {
-      margin-top: -35rem;
+      margin-top: -23rem;
       width: 50rem;
       height: 50rem;
     }
@@ -158,11 +156,15 @@
       font-size: 26px;
       margin-bottom: 1rem;
     }
+
+    .card:first-child {
+      margin-top: 6rem;
+    }
   }
 
   @media (max-width: 600px) {
     .circle {
-      margin-top: -28rem;
+      margin-top: -10rem;
       width: 50rem;
       height: 50rem;
     }
