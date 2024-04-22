@@ -65,11 +65,10 @@
   }
 
   .cardtext > h2 {
-    font-weight: var(--font-bold);
-    color: var(--color-red);
-    display: flex;
-    justify-content: start;
     margin: 0;
+    display: flex;
+    color: var(--color-red);
+    font-weight: var(--font-bold);
   }
 
   .cardtext > h3 {
@@ -102,6 +101,10 @@
     .events .card:nth-child(odd) {
       flex-direction: row-reverse;
       text-align: right;
+    }
+
+    .events .card:nth-child(odd) > .cardtext > h2 {
+      justify-content: end;
     }
 
     .circle {
