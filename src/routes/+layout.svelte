@@ -1,12 +1,16 @@
 <script>
-  import Header from "./Header.svelte";
-  import Footer from "./Footer.svelte";
+  import { page } from "$app/stores";
 
-  import "./style.css";
+  import Header from "./components/Header.svelte";
+  import Footer from "./components/Footer.svelte";
+  import Scroll from "./components/Scroll.svelte";
 </script>
 
 <div class="app">
   <Header />
+  {#if $page.route.id === "/"}
+    <Scroll />
+  {/if}
   <main>
     <slot />
   </main>
@@ -26,7 +30,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 8rem;

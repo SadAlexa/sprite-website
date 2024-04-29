@@ -1,6 +1,6 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
-  import logoimg from "$lib/assets/logo-background.png";
+  import img from "$lib/assets/photos/sprite-door.jpg";
 
   import telegram from "$lib/assets/telegram.svg";
   import email from "$lib/assets/email.svg";
@@ -11,7 +11,7 @@
 
 <div class="body">
   <div class="roundcard">
-    <img class="circle" src={logoimg} alt="" />
+    <img class="circle" src={img} alt="" />
   </div>
   <br />
   <span class="find">

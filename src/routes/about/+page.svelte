@@ -47,12 +47,10 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    padding: 1rem;
   }
 
   .card > img {
-    border-radius: 10rem;
-    width: 10rem;
-    height: 10rem;
     object-fit: cover;
     aspect-ratio: 1 / 1;
   }
@@ -60,11 +58,7 @@
   .cards {
     display: flex;
     flex-direction: column;
-  }
-
-  .cards .card:nth-child(odd) {
-    flex-direction: row-reverse;
-    text-align: right;
+    align-items: center;
   }
 
   .cards .card:last-child {
@@ -108,10 +102,8 @@
 
   .card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-radius: 10rem;
     box-shadow: var(--color-purple) 0px 5px 15px;
     margin-top: 4rem;
     background-color: var(--color-white);
@@ -120,7 +112,6 @@
   .cardtext {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     margin: 2rem;
   }
 
@@ -148,8 +139,25 @@
     }
 
     .card {
+      flex-direction: row;
       width: 35rem;
       height: 10rem;
+      border-radius: 10rem;
+    }
+
+    .card > img {
+      border-radius: 10rem;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .cards .card:nth-child(odd) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    .cardtext {
+      justify-content: start;
     }
 
     .cardtext > h2 {
@@ -164,7 +172,7 @@
 
   @media (max-width: 600px) {
     .circle {
-      margin-top: -10rem;
+      margin-top: -15rem;
       width: 50rem;
       height: 50rem;
     }
@@ -174,8 +182,21 @@
     }
 
     .card {
-      width: 26rem;
-      height: 12rem;
+      width: 80%;
+      height: auto;
+      padding: 0 0 2rem 0;
+      flex-direction: column;
+      border-radius: 13rem;
+    }
+
+    .card > img {
+      border-radius: 13rem;
+      width: 100%;
+    }
+
+    .cardtext {
+      justify-content: center;
+      text-align: center;
     }
 
     .cardtext > h2 {

@@ -5,7 +5,6 @@
   import { _ } from "svelte-i18n";
 
   import logoimg from "$lib/assets/logo-background.png";
-  import burger from "$lib/assets/burgher.svg";
   import Menu from "./Menu.svelte";
   import Lang from "./Lang.svelte";
 </script>
@@ -15,7 +14,6 @@
     <Hamburger bind:open={$isMenuOpen} --color="var(--color-black)" />
   </div>
   <div class="logo">
-    <!-- <img class="menu" src={burger} alt="menu" /> -->
     <img src={logoimg} alt="logo S.P.R.I.Te." />
     <h1>S.P.R.I.Te.</h1>
   </div>
@@ -86,7 +84,6 @@
       justify-content: space-between;
     }
 
-    .menu,
     .burger {
       display: none;
     }

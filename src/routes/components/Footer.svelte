@@ -5,7 +5,7 @@
   import email from "$lib/assets/email.svg";
   import insta from "$lib/assets/insta.svg";
 
-  import "./style.css";
+  import "../style.css";
 </script>
 
 <footer>
@@ -13,7 +13,7 @@
     <h1 class="logo">S.P.R.I.Te.</h1>
     <ul class="questions">
       <li><a href="/"><h1>{$_("footer.about")}</h1></a></li>
-      <li><a href="/events"><h1>{$_("footer.events")}</h1></a></li>
+      <!-- <li><a href="/events"><h1>{$_("footer.events")}</h1></a></li> -->
       <li>
         <a href="/contacts"><h1>{$_("footer.contacts")}</h1></a>
         <ul class="socials">

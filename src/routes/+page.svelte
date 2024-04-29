@@ -2,12 +2,10 @@
   import { _ } from "svelte-i18n";
 
   import img from "$lib/assets/photos/sspriters-photo.jpg";
-
-  import "./style.css";
 </script>
 
 <div class="body">
-  <span>
+  <span class="text">
     <h1>{$_("home.title")}</h1>
     <h2>{$_("home.subtitle")} <span>S.P.R.I.Te.</span></h2>
     <p>
@@ -51,7 +49,7 @@
   input {
     font-size: 20px;
     font-weight: var(--font-medium);
-    margin: 1rem 0;
+    margin: 0 0 2rem 0;
     padding: 0;
   }
 
@@ -100,6 +98,7 @@
 
     .img {
       align-items: end;
+      margin-bottom: 2rem;
     }
   }
 
@@ -109,13 +108,22 @@
     }
 
     .img > img {
-      width: 30rem;
-      margin: 6rem 0 2rem 0;
+      width: 100%;
+      height: auto;
+      margin: 0 0 2rem 0;
     }
 
     span {
       text-align: center;
       align-items: center;
+    }
+
+    .text {
+      margin: 0 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
     }
   }
 </style>
