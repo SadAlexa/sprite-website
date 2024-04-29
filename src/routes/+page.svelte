@@ -1,7 +1,7 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
 
-  import logoimg from "$lib/assets/logo-background.png";
+  import img from "$lib/assets/photos/sspriters-photo.jpg";
 
   import "./style.css";
 </script>
@@ -16,7 +16,7 @@
     <label for="about">About</label>
     <input
       type="button"
-      value="About"
+      value={$_("nav.about")}
       id="about"
       on:click={() => {
         window.location.href = "/about";
@@ -24,7 +24,7 @@
     />
   </span>
   <div class="img">
-    <img src={logoimg} alt="logo S.P.R.I.Te." />
+    <img src={img} alt="" />
   </div>
 </div>
 
@@ -77,8 +77,15 @@
       flex-direction: row;
     }
 
+    .img {
+      margin-left: 4rem;
+    }
+
     .img > img {
       width: 40rem;
+      border-radius: 100%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
     }
 
     span {
@@ -103,6 +110,7 @@
 
     .img > img {
       width: 30rem;
+      margin: 6rem 0 2rem 0;
     }
 
     span {

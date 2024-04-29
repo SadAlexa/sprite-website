@@ -12,13 +12,13 @@
   "about.writer.text": "Write captivating descriptions for our social media",
   "about.events.title": "Event Organizer 🎉",
   "about.events.text": "Propose and organize all the events you can imagine",
-  "about.volunteer.title": "Volunteer ⚒",
+  "about.volunteer.title": "Volunteer 🏵",
   "about.volunteer.text": "Meet new people and lend a hand during events",
   "about.web.title": "Webmaster 💻",
   "about.web.text": "Manage our domain, improve it, and add functionality",
-  "about.study.title": "Study Groups 👩‍🎓👨‍🎓",
+  "about.study.title": "Study Groups 📖",
   "about.study.text": "Studying in groups is a great idea! Come meet your new companions",
-  "about.notes.title": "Note Management 📚",
+  "about.notes.title": "Notes 📚",
   "about.notes.text": "Collect and share notes, exam topics, and solutions",
 
   "nav.home": "HOME",
@@ -38,5 +38,6 @@
 
   "home.title": "HI THERE!",
   "home.subtitle": "WE ARE",
-  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, we organize many events and make it more beautiful the university life."
+  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, we organize many events and make it more beautiful the university life.",
+  "home.scroll": "GREAT DISCOUNTS WITH THE S.P.R.I.Te. CARD!"
 }

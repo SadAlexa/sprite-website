@@ -12,13 +12,13 @@
   "about.writer.text": "Scrivi accattivanti descrizioni per i nostri social",
   "about.events.title": "Organizzatore di eventi 🎉",
   "about.events.text": "Proponi e organizza tutti gli eventi che hai mai immmaginato",
-  "about.volunteer.title": "Volontario ⚒",
+  "about.volunteer.title": "Volontario 🏵",
   "about.volunteer.text": "Incontra nuove persone e dai una mano durante gli eventi",
   "about.web.title": "Webmaster 💻",
   "about.web.text": "Gestisci il nostro dominio, migliorandolo e aggiungengo funzionalità",
-  "about.study.title": "Gruppi studio 👩‍🎓👨‍🎓",
+  "about.study.title": "Gruppi studio 📖",
   "about.study.text": "Studiare in gruppo è un'ottima idea! Vieni a conoscere i tuoi nuovi compagni",
-  "about.notes.title": "Gestione appunti 📚",
+  "about.notes.title": "Appunti 📚",
   "about.notes.text": "Raccogli e considividi appunti, temi d'esame, e soluzioni",
 
   "nav.home": "HOME",
@@ -38,5 +38,6 @@
 
   "home.title": "CIAO!",
   "home.subtitle": "NOI SIAMO",
-  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, organizziamo tanti eventi e rendiamo un po' più bella la vita universitaria."
+  "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, organizziamo tanti eventi e rendiamo un po' più bella la vita universitaria.",
+  "home.scroll": "VANTAGGIOSI SCONTI CON LA TESSERA S.P.R.I.Te.!"
 }
