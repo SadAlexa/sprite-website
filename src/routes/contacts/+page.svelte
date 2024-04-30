@@ -14,14 +14,14 @@
     <img class="circle" src={img} alt="" />
   </div>
   <br />
-  <span class="find">
+  <div class="find">
     <h1>{$_("contacts.title")}:</h1>
     <p>
       {$_("contacts.text")}<br />
       <span><strong>Via dell'Università 50 - Cesena</strong></span><br />
       {$_("contacts.room")} <span><strong>2010</strong></span>!
     </p>
-  </span>
+  </div>
   <br />
   <div class="chat">
     <h1>{$_("contacts.chat")}:</h1>

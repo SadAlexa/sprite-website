@@ -6,7 +6,7 @@
 </script>
 
 <div class="body">
-  <span class="text">
+  <div class="text">
     <h1>{$_("home.title")}</h1>
     <h2>{$_("home.subtitle")} <span>S.P.R.I.Te.</span></h2>
     <p>
@@ -42,7 +42,7 @@
         window.location.href = "/about";
       }}
     />
-  </span>
+  </div>
   <div class="img">
     <img src={img} alt="" />
   </div>
@@ -138,13 +138,13 @@
       justify-content: start;
     }
 
-    span {
+    .text {
       display: flex;
       flex-direction: column;
       align-items: start;
     }
 
-    span > p {
+    .text > p {
       text-align: left;
     }
 
@@ -165,12 +165,9 @@
       margin: 0 0 2rem 0;
     }
 
-    span {
+    .text {
       text-align: center;
       align-items: center;
-    }
-
-    .text {
       margin: 0 1rem;
     }
 

@@ -19,23 +19,23 @@
 <div class="body">
   <div class="roundcard">
     <div class="circle" />
-    <span class="about">
+    <div class="about">
       <h1>{$_("about.title")}</h1>
       <p>
         {$_("about.text")}
       </p>
       <p class="strong"><strong>{$_("about.youll")}</strong></p>
-    </span>
+    </div>
   </div>
   <br />
   <div class="cards">
     {#each cards as card}
       <div class="card" id="cardid">
         <img src="src/lib/assets/about/{card}.jpg" alt="" />
-        <span class="cardtext">
+        <div class="cardtext">
           <h2>{$_(`about.${card}.title`)}</h2>
           <p>{$_(`about.${card}.text`)}</p>
-        </span>
+        </div>
       </div>
     {/each}
   </div>
