@@ -35,18 +35,20 @@
   "footer.about": "Who are we?",
   "footer.events": "What's the next event?",
   "footer.contacts": "Do you want to contact us?",
+  "footer.github": "Do you have problems with the site or just want to give a look?",
 
   "home.title": "HI THERE!",
   "home.subtitle": "WE ARE",
   "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, we organize many events and make it more beautiful the university life.",
   "home.scroll": "GREAT DISCOUNTS WITH THE S.P.R.I.Te. CARD!",
+  "home.scrollother": "WITH DONATIONS YOU CAN ALSO GET OTHER GADGETS!",
   "home.follow": "If you want to stay up to date on all our events, come and find us on",
 
   "info.donations": "With a donation of 5€, you will receive our card!",
   "info.benefits": "With our card you can have benefits!",
-  "info.agreements": "Agreements can be found in the Fenix Cafe or in the Volume Cafe",
-  "info.comingsoon": "We are working on it!",
+  "info.agreements": "Agreements can be found in the Fenix Cafe or in the Volume Cafe!",
+  "info.comingsoon": "We are always trying to add new ones!",
   "info.tshirts": "Our t-shirts!",
   "info.bottle": "Our bottles!",
-  "info.stikers": "Our stickers!"
+  "info.stikers": "Our stickers S.P.R.I.Te!"
 }

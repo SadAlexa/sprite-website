@@ -35,18 +35,20 @@
   "footer.about": "Chi siamo?",
   "footer.events": "Qual è il prossimo evento?",
   "footer.contacts": "Vuoi contattarci?",
+  "footer.github": "Hai problemi col sito o vuoi solo dare un'occhiata?",
 
   "home.title": "CIAO!",
   "home.subtitle": "NOI SIAMO",
   "home.text": "Associazione Studenti Polo Romagnolo in Informatica e Tecnologie, organizziamo tanti eventi e rendiamo un po' più bella la vita universitaria.",
   "home.scroll": "VANTAGGIOSI SCONTI CON LA TESSERA S.P.R.I.Te.!",
+  "home.scrollother": "CON LE DONAZIONI PUOI RICEVERE ANCHE ALTRI GADGET!",
   "home.follow": "Se vuoi rimanere aggiornato su tutti i nostri eventi, vienici a trovare su",
 
   "info.donations": "Con una donazione di 5€, riceverai la nostra tessera!",
   "info.benefits": "Con la nostra tessera puoi avere dei vantaggi!",
-  "info.agreements": "Sconti al Fenix Cafe o al Bar Volume",
+  "info.agreements": "Vantaggiosi sconti al Fenix Cafe o al Bar Volume!",
   "info.comingsoon": "Cerchiamo di aggiungerne sempre dei nuovi!",
   "info.tshirts": "Le nostre maglie!",
   "info.bottle": "Le nostre borracce!",
-  "info.stikers": "I nostri stickers!"
+  "info.stikers": "I nostri stickers S.P.R.I.Te!"
 }
