@@ -53,6 +53,28 @@
     flex-direction: column;
   }
 
+  a,
+  a > img,
+  .socials > li {
+    transition: transform 0.3s ease;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a > img:hover,
+  .socials > li:hover {
+    transform: scale(1.1);
+  }
+
+  a:active,
+  a > img:active,
+  .socials > li:active {
+    transform: scale(0.9);
+  }
+
   .socials {
     display: flex;
     flex-direction: row;
@@ -63,10 +85,6 @@
   .chat > h1,
   .find > h1 {
     margin-bottom: 0;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   ul {

@@ -44,7 +44,7 @@
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#000000"
+            fill="#f1eff4"
             ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
               id="SVGRepo_tracerCarrier"
               stroke-linecap="round"
@@ -121,8 +121,20 @@
     text-decoration: none;
   }
 
-  a {
+  a,
+  a > img {
     text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  a:hover,
+  a > img:hover {
+    transform: scale(1.1);
+  }
+
+  a:active,
+  a > img:active {
+    transform: scale(0.9);
   }
 
   img,

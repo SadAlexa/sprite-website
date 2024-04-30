@@ -30,9 +30,9 @@
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-animation: scrolling-div 7s linear infinite;
-    -webkit-animation: scrolling-div 7s linear infinite;
-    animation: scrolling-div 7s linear infinite;
+    -moz-animation: scrolling-div 8s linear infinite;
+    -webkit-animation: scrolling-div 8s linear infinite;
+    animation: scrolling-div 8s linear infinite;
   }
 
   @-moz-keyframes scrolling-div {

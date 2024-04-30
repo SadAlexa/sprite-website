@@ -24,11 +24,19 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
 
   button:hover {
     background-color: var(--color-black);
     color: var(--color-white);
+    transform: scale(1.1);
+  }
+
+  button:active {
+    transform: scale(0.9);
   }
 
   .lang {

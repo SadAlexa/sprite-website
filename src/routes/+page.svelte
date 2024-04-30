@@ -63,9 +63,20 @@
     align-items: center;
   }
 
+  svg:hover,
+  input:hover {
+    transform: scale(1.1);
+  }
+
+  svg:active,
+  input:active {
+    transform: scale(0.9);
+  }
+
   svg {
     width: 2rem;
     margin-right: 1rem;
+    transition: transform 0.3s ease;
   }
 
   h1,
@@ -95,6 +106,7 @@
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
 
   label {
