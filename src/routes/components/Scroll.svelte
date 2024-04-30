@@ -1,16 +1,15 @@
 <script lang="ts">
-  import { _ } from "svelte-i18n";
-
   import "../style.css";
+
+  export let text;
 </script>
 
 <div class="scrolling-div" id="scrolling-divid">
-  <p>{$_("home.scroll")}</p>
+  <p>{text}</p>
 </div>
 
 <style>
   .scrolling-div {
-    margin-top: 5.5rem;
     width: 100%;
     height: 3rem;
     overflow: hidden;
@@ -62,6 +61,18 @@
       -moz-transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
+    }
+  }
+
+  @media (min-width: 600px) {
+    .scrolling-div {
+      margin-top: var(--margin-desktop);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .scrolling-div {
+      margin-top: var(--margin-mobile);
     }
   }
 </style>

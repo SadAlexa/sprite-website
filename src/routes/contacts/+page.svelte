@@ -134,11 +134,11 @@
 
   @media (min-width: 600px) {
     .circle {
-      margin-top: -33rem;
+      margin-top: -25rem;
     }
 
     .find > h1 {
-      margin-top: 20rem;
+      margin-top: 27rem;
     }
   }
 

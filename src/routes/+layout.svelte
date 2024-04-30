@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores";
+  import { _ } from "svelte-i18n";
 
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
@@ -9,7 +10,11 @@
 <div class="app">
   <Header />
   {#if $page.route.id === "/"}
-    <Scroll />
+    <Scroll
+      text={$_("home.scroll")}
+      --margin-desktop="8rem"
+      --margin-mobile="5.5rem"
+    />
   {/if}
   <main>
     <slot />
@@ -30,9 +35,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 8rem;
     box-sizing: border-box;
   }
 

@@ -105,8 +105,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: var(--color-purple) 0px 5px 15px;
-    margin-top: 4rem;
     background-color: var(--color-white);
+    margin-top: 4rem;
   }
 
   .cardtext {
@@ -128,7 +128,7 @@
 
   @media (min-width: 600px) {
     .circle {
-      margin-top: -23rem;
+      margin-top: -40%;
       width: 50rem;
       height: 50rem;
     }
@@ -166,13 +166,17 @@
     }
 
     .card:first-child {
-      margin-top: 6rem;
+      margin-top: 20%;
+    }
+
+    .about {
+      margin-top: 25%;
     }
   }
 
   @media (max-width: 600px) {
     .circle {
-      margin-top: -15rem;
+      margin-top: -40%;
       width: 50rem;
       height: 50rem;
     }
@@ -206,6 +210,14 @@
 
     .cardtext > p {
       font-size: 18px;
+    }
+
+    .about {
+      margin-top: 8%;
+    }
+
+    .card:first-child {
+      margin-top: 25%;
     }
   }
 </style>
