@@ -51,7 +51,11 @@
   </ul>
 </div>
 <div class="info-other">
-  <Scroll text={$_("home.scroll")} --margin-desktop="0" --margin-mobile="0" />
+  <Scroll
+    text={$_("home.scrollother")}
+    --margin-desktop="0"
+    --margin-mobile="0"
+  />
   <ul>
     <li>
       <img src={tshirt} alt="" />
@@ -75,7 +79,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-purple);
     width: 100%;
   }
 
@@ -92,10 +95,15 @@
 
   li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-right: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: var(--color-purple) 0px 5px 15px;
+    background-color: var(--color-white);
+  }
+
+  ul {
+    padding: 0 2rem;
   }
 
   @media (min-width: 600px) {
@@ -104,12 +112,27 @@
       align-items: center;
       justify-content: center;
       flex-direction: row;
-      margin-top: 2rem;
+      margin: 1rem;
     }
 
     img {
       width: 7rem;
       border-radius: 7rem;
+    }
+
+    li {
+      border-radius: 7rem;
+      width: 7rem;
+      padding: 1rem;
+      margin: 2rem;
+    }
+
+    .info-card li {
+      height: 15rem;
+    }
+
+    .info-other li {
+      height: 12rem;
     }
 
     svg {
@@ -121,8 +144,15 @@
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 2rem;
+      grid-gap: 3rem;
       margin-top: 2rem;
+    }
+
+    li {
+      border-radius: 6rem;
+      width: 6rem;
+      height: auto;
+      padding: 1rem;
     }
 
     img {
