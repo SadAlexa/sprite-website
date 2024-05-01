@@ -13,10 +13,10 @@
   <div class="burger">
     <Hamburger bind:open={$isMenuOpen} --color="var(--color-black)" />
   </div>
-  <div class="logo">
+  <a href="/" class="logo">
     <img src={logoimg} alt="logo S.P.R.I.Te." />
     <h1>S.P.R.I.Te.</h1>
-  </div>
+  </a>
   {#if $isMenuOpen}
     <Menu />
   {/if}
@@ -54,6 +54,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    text-decoration: none;
+    color: var(--color-black);
   }
 
   .logo > img {
