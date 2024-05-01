@@ -13,32 +13,43 @@
     <h1 class="logo">S.P.R.I.Te.</h1>
     <ul class="questions">
       <li><a href="/"><h1>{$_("footer.about")}</h1></a></li>
-      <!-- <li><a href="/events"><h1>{$_("footer.events")}</h1></a></li> -->
       <li>
         <a href="/contacts"><h1>{$_("footer.contacts")}</h1></a>
         <ul class="socials">
           <li>
-            <a href="https://t.me/spritenews"
-              ><img src={telegram} alt="telegram" /></a
-            >
-          </li>
-          <li>
-            <a href="mailto:associazionesprite@gmail.com"
+            <a href="mailto:associazionesprite@gmail.com" aria-label="E-mail"
               ><img src={email} alt="email" /></a
             >
           </li>
           <li>
-            <a href="https://www.instagram.com/associazionesprite"
-              ><img src={insta} alt="instagram" /></a
+            <a
+              href="https://www.instagram.com/associazionesprite"
+              aria-label="Instagram"><img src={insta} alt="instagram" /></a
             >
           </li>
         </ul>
       </li>
       <li>
-        <a href="https://github.com/SadAlexa/sprite-website"
+        <a href="/"><h1>{$_("footer.events")}</h1></a>
+        <ul class="events">
+          <li>
+            <a href="https://t.me/spritenews" aria-label="Telegram"
+              ><img src={telegram} alt="telegram" /></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/associazionesprite"
+              aria-label="Instagram"><img src={insta} alt="instagram" /></a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://github.com/SadAlexa/sprite-website" aria-label="GitHub"
           ><h1>{$_("footer.github")}</h1></a
         >
-        <a href="https://github.com/SadAlexa/sprite-website"
+        <a href="https://github.com/SadAlexa/sprite-website" aria-label="GitHub"
           ><svg
             viewBox="0 0 24 24"
             version="1.1"
@@ -98,10 +109,11 @@
   footer {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   p {
@@ -148,6 +160,10 @@
     display: flex;
   }
 
+  li {
+    padding: 1rem;
+  }
+
   li:last-child {
     display: flex;
     flex-direction: column;
@@ -159,16 +175,21 @@
     justify-content: space-between;
   }
 
-  .socials {
+  .socials,
+  .events {
     flex-direction: row;
     justify-content: center;
   }
 
-  .socials > li:not(:last-child) {
-    margin-right: 1rem;
-  }
-
   @media (min-width: 650px) {
+    .logo {
+      margin-right: 3rem;
+    }
+
+    footer {
+      padding: 1rem;
+    }
+
     div {
       flex-direction: row;
     }
@@ -194,8 +215,6 @@
   @media (max-width: 650px) {
     footer {
       text-align: center;
-      margin: 0;
-      padding: 1rem;
     }
 
     div {
@@ -205,6 +224,7 @@
     .questions {
       flex-direction: column;
       align-items: center;
+      padding: 1rem;
     }
   }
 </style>

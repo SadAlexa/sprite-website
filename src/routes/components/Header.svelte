@@ -77,7 +77,7 @@
   }
 
   .burger {
-    margin: 1rem;
+    padding: 1rem;
   }
 
   @media only screen and (min-width: 600px) {
@@ -121,7 +121,7 @@
     }
 
     .logo {
-      margin-right: 3rem;
+      margin-right: 2rem;
       float: right;
     }
   }

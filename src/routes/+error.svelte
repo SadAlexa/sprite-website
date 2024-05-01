@@ -25,7 +25,7 @@
 
   a {
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-white);
     background-color: var(--color-red);
     padding: 1rem;
     border-radius: 5rem;

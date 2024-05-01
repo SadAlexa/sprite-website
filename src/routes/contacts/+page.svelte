@@ -27,18 +27,14 @@
     <h1>{$_("contacts.chat")}:</h1>
     <ul class="socials">
       <li>
-        <a href="https://t.me/spritenews"
-          ><img src={telegram} alt="telegram" /></a
-        >
-      </li>
-      <li>
-        <a href="mailto:associazionesprite@gmail.com"
+        <a href="mailto:associazionesprite@gmail.com" aria-label="E-mail"
           ><img src={email} alt="email" /></a
         >
       </li>
       <li>
-        <a href="https://www.instagram.com/associazionesprite"
-          ><img src={insta} alt="instagram" /></a
+        <a
+          href="https://www.instagram.com/associazionesprite"
+          aria-label="Instagram"><img src={insta} alt="instagram" /></a
         >
       </li>
     </ul>

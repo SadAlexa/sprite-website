@@ -181,7 +181,7 @@
 
   @media (max-width: 600px) {
     .circle {
-      margin-top: -40%;
+      margin-top: -35%;
       width: 50rem;
       height: 50rem;
     }
@@ -223,6 +223,14 @@
 
     .card:first-child {
       margin-top: 25%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .circle {
+      margin-top: -10%;
+      width: 50rem;
+      height: 50rem;
     }
   }
 </style>
