@@ -7,6 +7,11 @@
   import Scroll from "./components/Scroll.svelte";
 </script>
 
+<svelte:head>
+    <title>Associazione S.P.R.I.Te.</title>
+	<meta name="description" content="{$_('home.text')}" />
+</svelte:head>
+
 <div class="app">
   <Header />
   {#if $page.route.id === "/"}
