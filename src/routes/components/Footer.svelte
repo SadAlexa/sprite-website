@@ -140,7 +140,6 @@
   img,
   svg {
     width: 1.5rem;
-    margin-right: 1rem;
   }
 
   ul {
@@ -163,6 +162,10 @@
   .socials {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .socials > li:not(:last-child) {
+    margin-right: 1rem;
   }
 
   @media (min-width: 650px) {
