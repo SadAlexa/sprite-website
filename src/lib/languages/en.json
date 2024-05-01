@@ -50,5 +50,8 @@
   "info.comingsoon": "We are always trying to add new ones!",
   "info.tshirts": "Our t-shirts!",
   "info.bottle": "Our bottles!",
-  "info.stikers": "Our stickers S.P.R.I.Te!"
+  "info.stikers": "Our stickers S.P.R.I.Te!",
+
+  "error.title": "Have you lost the way? 🤔",
+  "error.back": "Back to HOME"
 }

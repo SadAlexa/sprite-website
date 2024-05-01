@@ -50,5 +50,8 @@
   "info.comingsoon": "Cerchiamo di aggiungerne sempre dei nuovi!",
   "info.tshirts": "Le nostre maglie!",
   "info.bottle": "Le nostre borracce!",
-  "info.stikers": "I nostri stickers S.P.R.I.Te!"
+  "info.stikers": "I nostri stickers S.P.R.I.Te!",
+
+  "error.title": "Hai perso la retta via? 🤔",
+  "error.back": "Torna alla HOME"
 }
