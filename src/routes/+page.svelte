@@ -1,7 +1,6 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
   import Info from "./components/Info.svelte";
-
   import img from "$lib/assets/photos/sspriters-photo.jpg";
 </script>
 
@@ -33,15 +32,7 @@
         ></a
       >
     </p>
-    <label for="about">About</label>
-    <input
-      type="button"
-      value={$_("nav.about")}
-      id="about"
-      on:click={() => {
-        window.location.href = "/about";
-      }}
-    />
+    <a class="button" href="/about">{$_("nav.about")}</a>
   </div>
   <div class="img">
     <img src={img} alt="" />
@@ -64,12 +55,12 @@
   }
 
   svg:hover,
-  input:hover {
+  .button:hover {
     transform: scale(1.1);
   }
 
   svg:active,
-  input:active {
+  .button:active {
     transform: scale(0.9);
   }
 
@@ -92,14 +83,14 @@
   }
 
   p,
-  input {
+  .button {
     font-size: 20px;
     font-weight: var(--font-medium);
     margin: 0 0 2rem 0;
     padding: 0;
   }
 
-  input {
+  .button {
     border: none;
     background-color: var(--color-red);
     color: var(--color-black);
@@ -108,11 +99,6 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
-
-  label {
-    display: none;
-  }
-
   .img {
     display: flex;
   }
