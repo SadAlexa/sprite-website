@@ -14,6 +14,11 @@
     "study",
     "notes",
   ];
+
+  const images: { [key: string]: string } = import.meta.glob(
+    "$lib/assets/about/*.jpg",
+    { eager: true, import: "default" }
+  );
 </script>
 
 <div class="body">
@@ -31,7 +36,7 @@
   <div class="cards">
     {#each cards as card}
       <div class="card" id="cardid">
-        <img src="src/lib/assets/about/{card}.jpg" alt="" />
+        <img src={images[`/src/lib/assets/about/${card}.jpg`]} alt="" />
         <div class="cardtext">
           <h2>{$_(`about.${card}.title`)}</h2>
           <p>{$_(`about.${card}.text`)}</p>

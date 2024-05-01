@@ -89,7 +89,7 @@
     </ul>
   </div>
   <p>
-    ©Copyright 2024 - Associazione S.P.R.I.Te. - Università di Bologna - Via
+    © Copyright 2024 - Associazione S.P.R.I.Te. - Università di Bologna - Via
     dell’Università, 50 - 47521 Cesena
   </p>
 </footer>
