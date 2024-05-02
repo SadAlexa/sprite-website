@@ -2,12 +2,12 @@
   import { _ } from "svelte-i18n";
   import Scroll from "./Scroll.svelte";
 
-  import card from "$lib/assets/photos/card.jpg";
-  import benefits from "$lib/assets/photos/benefits.jpg";
-  import agreements from "$lib/assets/photos/agreements.jpg";
-  import sticker from "$lib/assets/photos/sticker.jpg";
-  import bottle from "$lib/assets/photos/bottle.jpg";
-  import tshirt from "$lib/assets/photos/tshirt.jpg";
+  import card from "$lib/assets/photos/card.webp";
+  import benefits from "$lib/assets/photos/benefits.webp";
+  import agreements from "$lib/assets/photos/agreements.webp";
+  import sticker from "$lib/assets/photos/sticker.webp";
+  import bottle from "$lib/assets/photos/bottle.webp";
+  import tshirt from "$lib/assets/photos/tshirt.webp";
 </script>
 
 <div class="info-card">

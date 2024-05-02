@@ -1,6 +1,6 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
-  import img from "$lib/assets/photos/sprite-door.jpg";
+  import img from "$lib/assets/photos/sprite-door.webp";
 </script>
 
 <div class="body">
