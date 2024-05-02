@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "../style.css";
-
   export let text;
 </script>
 

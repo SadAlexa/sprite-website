@@ -5,11 +5,13 @@
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
   import Scroll from "./components/Scroll.svelte";
+
+  import "./style.css";
 </script>
 
 <svelte:head>
-    <title>Associazione S.P.R.I.Te.</title>
-	<meta name="description" content="{$_('home.text')}" />
+  <title>Associazione S.P.R.I.Te.</title>
+  <meta name="description" content={$_("home.text")} />
 </svelte:head>
 
 <div class="app">

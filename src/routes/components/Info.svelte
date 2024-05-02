@@ -8,8 +8,6 @@
   import sticker from "$lib/assets/photos/sticker.jpg";
   import bottle from "$lib/assets/photos/bottle.jpg";
   import tshirt from "$lib/assets/photos/tshirt.jpg";
-
-  import "../style.css";
 </script>
 
 <div class="info-card">

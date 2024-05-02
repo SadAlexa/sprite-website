@@ -1,8 +1,6 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
 
-  import "../style.css";
-
   const cards = [
     "social",
     "photo",
@@ -16,7 +14,7 @@
   ];
 
   const images: { [key: string]: string } = import.meta.glob(
-    "$lib/assets/about/*.jpg",
+    "$lib/assets/about/*.webp",
     { eager: true, import: "default" }
   );
 </script>
@@ -36,7 +34,7 @@
   <div class="cards">
     {#each cards as card}
       <div class="card" id="cardid">
-        <img src={images[`/src/lib/assets/about/${card}.jpg`]} alt="" />
+        <img src={images[`/src/lib/assets/about/${card}.webp`]} alt="" />
         <div class="cardtext">
           <h2>{$_(`about.${card}.title`)}</h2>
           <p>{$_(`about.${card}.text`)}</p>

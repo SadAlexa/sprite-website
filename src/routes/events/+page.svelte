@@ -1,6 +1,5 @@
 <script lang="ts">
   import logoimg from "$lib/assets/logo-background.png";
-  import "../style.css";
 </script>
 
 <div class="body">
