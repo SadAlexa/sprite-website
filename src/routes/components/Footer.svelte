@@ -106,7 +106,6 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             ></g><g id="SVGRepo_iconCarrier">
-              <title>github_fill</title>
               <g
                 id="页面-1"
                 stroke="none"

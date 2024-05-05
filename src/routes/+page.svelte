@@ -2,6 +2,9 @@
   import { _ } from "svelte-i18n";
   import Info from "./components/Info.svelte";
   import img from "$lib/assets/photos/spriters-photo.webp";
+  import { setTitle } from "$lib";
+
+  setTitle("");
 </script>
 
 <div class="body">
@@ -46,7 +49,6 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           ></g><g id="SVGRepo_iconCarrier">
-            <title>telegram_fill</title>
             <g
               id="页面-1"
               stroke="none"

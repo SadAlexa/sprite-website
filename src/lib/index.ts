@@ -24,13 +24,10 @@ JUST FOR NOW THIS IS DISABLED
 export { navs };
 export const isMenuOpen = writable(false);
 
-/* export function t(key: any) {
-  console.log(it[key as keyof typeof it]);
-  switch (lang as any) {
-    case "IT":
-      return it[key as keyof typeof it];
-    case "EN":
-      return en[key as keyof typeof en];
-  }
+export const title = writable("Associazione S.P.R.I.Te.");
+
+export function setTitle(t: string) {
+  t === ""
+    ? title.set("Associazione S.P.R.I.Te.")
+    : title.set(`Associazione S.P.R.I.Te. - ${t}`);
 }
- */

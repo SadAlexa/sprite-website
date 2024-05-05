@@ -1,5 +1,8 @@
 <script lang="ts">
+  import { setTitle } from "$lib";
   import { _ } from "svelte-i18n";
+
+  setTitle($_("nav.about"));
 
   const cards = [
     "social",

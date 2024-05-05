@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { _ } from "svelte-i18n";
+  import { title } from "$lib";
 
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
@@ -10,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Associazione S.P.R.I.Te.</title>
+  <title>{$title}</title>
   <meta name="description" content={$_("home.text")} />
 </svelte:head>
 

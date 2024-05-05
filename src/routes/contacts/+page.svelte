@@ -1,6 +1,9 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
   import img from "$lib/assets/photos/sprite-door.webp";
+  import { setTitle } from "$lib";
+
+  setTitle($_("nav.contacts"));
 </script>
 
 <div class="body">
