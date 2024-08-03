@@ -7,6 +7,18 @@
   import logoimg from "$lib/assets/logo-background.png";
   import Menu from "./Menu.svelte";
   import Lang from "./Lang.svelte";
+
+  import { onMount } from "svelte";
+  onMount(() => {
+    let header = document.getElementsByTagName<"header">("header")[0];
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        header.style.boxShadow = "var(--color-purple) 0px 5px 15px";
+      } else {
+        header.style.boxShadow = "var(--color-purple) 0px 1px";
+      }
+    });
+  });
 </script>
 
 <header>
@@ -41,6 +53,8 @@
     top: 0;
     width: 100%;
     z-index: 10;
+    transition: box-shadow 0.5s ease;
+    box-shadow: var(--color-purple) 0px 1px;
   }
 
   .navbar {

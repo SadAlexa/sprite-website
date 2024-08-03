@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://sprite.csr.unibo.it/</loc>
+    <lastmod>2024-08-03T13:28:45+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://sprite.csr.unibo.it/about</loc>
+    <lastmod>2024-08-03T13:28:45+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sprite.csr.unibo.it/contacts</loc>
+    <lastmod>2024-08-03T13:28:45+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
