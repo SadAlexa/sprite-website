@@ -50,7 +50,7 @@
         >
       </a>
     </div>
-    <h3>{$_("home.survey")}</h3>
+    <!-- <h3>{$_("home.survey")}</h3> -->
     <!-- <div class="survey">
       <p class="surveytext">
         {$_("home.surveytext")}
