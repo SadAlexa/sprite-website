@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
   import { _ } from "svelte-i18n";
+
+  let currentYear: number = new Date().getFullYear();
 </script>
 
 <footer>
@@ -144,8 +146,8 @@
     </ul>
   </div>
   <p>
-    © Copyright 2024 - Associazione S.P.R.I.Te. - Università di Bologna - Via
-    dell’Università, 50 - 47521 Cesena
+    © Copyright {currentYear} - Associazione S.P.R.I.Te. - Università di Bologna
+    - Via dell’Università, 50 - 47521 Cesena
   </p>
 </footer>
 

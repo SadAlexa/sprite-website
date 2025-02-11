@@ -51,12 +51,12 @@
       </a>
     </div>
     <h3>{$_("home.survey")}</h3>
-    <div class="survey">
+    <!-- <div class="survey">
       <p class="surveytext">
         {$_("home.surveytext")}
       </p>
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScl0krMuGToYAp4KdDwjbhR12_4PsNDuqkaTkr7sBno6PLGcA/viewform"
+        href=""
         aria-label="Survey"
       >
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@
           </g></svg
         >
       </a>
-    </div>
+    </div> -->
     <a class="button" href="/about">{$_("nav.about")}</a>
   </div>
   <div class="img">
@@ -96,8 +96,7 @@
     justify-content: space-between;
   }
 
-  .events,
-  .survey {
+  .events {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,8 +113,7 @@
     font-size: 20px;
   }
 
-  .follow,
-  .surveytext {
+  .follow {
     margin-bottom: 0;
   }
 
