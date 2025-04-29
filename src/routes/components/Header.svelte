@@ -55,6 +55,7 @@
     z-index: 10;
     transition: box-shadow 0.5s ease;
     box-shadow: var(--color-purple) 0px 1px;
+    height: 6rem;
   }
 
   .navbar {
@@ -106,7 +107,7 @@
 
     .navbar {
       width: 100%;
-      height: 8rem;
+      height: 6rem;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;

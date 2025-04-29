@@ -20,8 +20,8 @@
   {#if $page.route.id === "/"}
     <Scroll
       text={$_("home.scroll")}
-      --margin-desktop="8rem"
-      --margin-mobile="5.5rem"
+      --margin-desktop="6rem"
+      --margin-mobile="6rem"
     />
   {/if}
   <main>

@@ -22,6 +22,11 @@
   <br />
   <div class="chat">
     <h1>{$_("contacts.chat")}:</h1>
+    <a
+      class="mail"
+      href="mailto:associazionesprite@gmail.com"
+      aria-label="E-mail"><p>associazionesprite@gmail.com</p></a
+    >
     <ul class="socials">
       <li>
         <a href="mailto:associazionesprite@gmail.com" aria-label="E-mail"
@@ -79,6 +84,15 @@
 
   a {
     text-decoration: none;
+  }
+
+  .mail {
+    color: var(--color-black);
+  }
+
+  .mail > p {
+    font-weight: var(--font-bold);
+    margin: 1rem 0 0 0;
   }
 
   a:hover,
