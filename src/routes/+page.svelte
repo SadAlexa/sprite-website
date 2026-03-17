@@ -209,7 +209,7 @@
 
     .img {
       align-items: end;
-      margin-bottom: 2rem;
+      margin: 6rem 0 2rem 0;
     }
   }
 
@@ -221,7 +221,7 @@
     .img > img {
       width: 100%;
       height: auto;
-      margin: 0 0 2rem 0;
+      margin: 6rem 0 2rem 0;
     }
 
     .text {

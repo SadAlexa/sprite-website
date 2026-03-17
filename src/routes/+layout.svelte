@@ -5,7 +5,6 @@
 
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
-  import Scroll from "./components/Scroll.svelte";
 
   import "./style.css";
 </script>
@@ -17,13 +16,13 @@
 
 <div class="app">
   <Header />
-  {#if $page.route.id === "/"}
+  <!-- {#if $page.route.id === "/"}
     <Scroll
       text={$_("home.scroll")}
       --margin-desktop="6rem"
       --margin-mobile="6rem"
     />
-  {/if}
+  {/if} -->
   <main>
     <slot />
   </main>

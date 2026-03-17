@@ -1,6 +1,6 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
-  import img from "$lib/assets/photos/sprite-door.webp";
+  import img from "$lib/assets/photos/sprite-door.jpg";
   import { setTitle } from "$lib";
 
   setTitle($_("nav.contacts"));
@@ -183,6 +183,8 @@
     box-shadow: var(--color-purple) 0px 5px 15px;
     width: 50rem;
     height: 50rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
   }
 
   a {

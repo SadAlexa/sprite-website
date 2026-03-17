@@ -1,16 +1,13 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
-  import Scroll from "./Scroll.svelte";
 
-  import card from "$lib/assets/photos/card.webp";
-  import benefits from "$lib/assets/photos/benefits.webp";
-  import agreements from "$lib/assets/photos/agreements.webp";
   import sticker from "$lib/assets/photos/sticker.webp";
-  import bottle from "$lib/assets/photos/bottle.webp";
-  import tshirt from "$lib/assets/photos/tshirt.webp";
+  import bottle from "$lib/assets/photos/bottle.jpg";
+  import tshirt from "$lib/assets/photos/tshirt.jpg";
+  import Scroll from "./Scroll.svelte";
 </script>
 
-<div class="info-card">
+<!-- <div class="info-card">
   <Scroll --margin-desktop="0" --margin-mobile="0" text={$_("home.scroll")} />
   <ul>
     <li>
@@ -47,7 +44,7 @@
       <p>{$_("info.comingsoon")}</p>
     </li>
   </ul>
-</div>
+</div> -->
 <div class="info-other">
   <Scroll
     text={$_("home.scrollother")}
@@ -71,7 +68,7 @@
 </div>
 
 <style>
-  .info-card,
+  /* .info-card, */
   .info-other {
     display: flex;
     flex-direction: column;
@@ -125,17 +122,17 @@
       margin: 2rem;
     }
 
-    .info-card li {
+    /* .info-card li {
       height: 15rem;
-    }
+    } */
 
     .info-other li {
       height: 12rem;
     }
 
-    svg {
+    /* svg {
       width: 6rem;
-    }
+    } */
   }
 
   @media (max-width: 600px) {
@@ -158,8 +155,8 @@
       border-radius: 6rem;
     }
 
-    svg {
+    /* svg {
       width: 5rem;
-    }
+    } */
   }
 </style>
